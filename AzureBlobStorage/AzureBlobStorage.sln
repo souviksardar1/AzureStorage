@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureBlobCommunication", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blob.SDK", "Blob.SDK\Blob.SDK.csproj", "{58512256-FF5A-4F8B-B23C-E0D89D51FA83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue.SDK", "Queue.SDK\Queue.SDK.csproj", "{27D1B06A-FA57-4F44-B270-69A69C22C761}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureQueueCommunication", "AzureQueueCommunication\AzureQueueCommunication.csproj", "{C551BFA8-E4F4-43EE-812E-2D9F83FB6FF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{58512256-FF5A-4F8B-B23C-E0D89D51FA83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58512256-FF5A-4F8B-B23C-E0D89D51FA83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58512256-FF5A-4F8B-B23C-E0D89D51FA83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27D1B06A-FA57-4F44-B270-69A69C22C761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D1B06A-FA57-4F44-B270-69A69C22C761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D1B06A-FA57-4F44-B270-69A69C22C761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D1B06A-FA57-4F44-B270-69A69C22C761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C551BFA8-E4F4-43EE-812E-2D9F83FB6FF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C551BFA8-E4F4-43EE-812E-2D9F83FB6FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C551BFA8-E4F4-43EE-812E-2D9F83FB6FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C551BFA8-E4F4-43EE-812E-2D9F83FB6FF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
