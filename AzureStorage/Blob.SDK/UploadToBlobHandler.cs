@@ -1,5 +1,5 @@
 ﻿namespace Blob.SDK;
-public class UploadToBlob
+public class UploadToBlobHandler
 {
     public static async Task UploadCsvDataToBlob<T>(string storageAccConnectionString, string containerName, string fileName, IEnumerable<T> stats)
     {

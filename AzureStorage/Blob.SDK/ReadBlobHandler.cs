@@ -1,5 +1,5 @@
 ﻿namespace Blob.SDK;
-public static class ReadBlob
+public static class ReadBlobHandler
 {
     public async static Task<List<T>> ReadCsvDataFromBlob<T>(string storageAccConnectionString, string containerName, string fileName)
     {

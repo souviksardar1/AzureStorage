@@ -9,8 +9,8 @@ public class Program
     public static async Task Main()
     {
 
-        var workorderDatafromAzStorage = await ReadBlob.ReadCsvDataFromBlob<Workorder>(azStorageConnectionString, woContainerName, "Workorder.csv");
-        var manufacturerDatafromAzStorage = await ReadBlob.ReadCsvDataFromBlob<Manufacturer>(azStorageConnectionString, manufacturerContainerName, "Manufacturer.csv");
+        var workorderDatafromAzStorage = await ReadBlobHandler.ReadCsvDataFromBlob<Workorder>(azStorageConnectionString, woContainerName, "Workorder.csv");
+        var manufacturerDatafromAzStorage = await ReadBlobHandler.ReadCsvDataFromBlob<Manufacturer>(azStorageConnectionString, manufacturerContainerName, "Manufacturer.csv");
 
         #region Append blob
         Console.WriteLine("Start : Append Blob operation is starting");
@@ -58,7 +58,7 @@ public class Program
             {
                 workorder.Add(new Workorder { Id = "Workorder" + i });
             }
-            await UploadToAppendBlob.UploadCsvDataToAppendBlob<Workorder>(azStorageConnectionString, woContainerName, "Workorder.csv", workorder);
+            await UploadToAppendBlobHandler.UploadCsvDataToAppendBlob<Workorder>(azStorageConnectionString, woContainerName, "Workorder.csv", workorder);
         }
 
         if (t.Name == "Manufacturer")
@@ -67,7 +67,7 @@ public class Program
             {
                 manufacturer.Add(new Manufacturer { Id = i, Name = "Manufacturer" + i });
             }
-            await UploadToBlob.UploadCsvDataToBlob<Manufacturer>(azStorageConnectionString, manufacturerContainerName, "Manufacturer.csv", manufacturer);
+            await UploadToBlobHandler.UploadCsvDataToBlob<Manufacturer>(azStorageConnectionString, manufacturerContainerName, "Manufacturer.csv", manufacturer);
         }
     }
     public async static Task ReadOrUpdateWorkorderInAppendBlob()
@@ -78,7 +78,7 @@ public class Program
         {
             tasks.Add(new Workorder { Id = "Task" + i });
         }
-        await UploadToAppendBlob.UploadCsvDataToAppendBlob<Workorder>(azStorageConnectionString, woContainerName, "Workorder.csv", tasks);
+        await UploadToAppendBlobHandler.UploadCsvDataToAppendBlob<Workorder>(azStorageConnectionString, woContainerName, "Workorder.csv", tasks);
     }
 
     public async static Task ReadOrUpdateWorkorderInBlob()
@@ -89,7 +89,7 @@ public class Program
         {
             manufacturer.Add(new Manufacturer { Id = i, Name = "Car - " + i });
         }
-        await UploadToBlob.UploadCsvDataToBlob<Manufacturer>(azStorageConnectionString, manufacturerContainerName, "Manufacturer.csv", manufacturer);
+        await UploadToBlobHandler.UploadCsvDataToBlob<Manufacturer>(azStorageConnectionString, manufacturerContainerName, "Manufacturer.csv", manufacturer);
     }
 }
 

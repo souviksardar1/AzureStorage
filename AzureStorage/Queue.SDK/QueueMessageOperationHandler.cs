@@ -3,10 +3,10 @@ using Azure.Storage.Queues.Models;
 
 namespace Queue.SDK
 {
-    public class QueueMessageOperation
+    public class QueueMessageOperationHandler
     {
         private Setup setup;
-        public QueueMessageOperation(string q)
+        public QueueMessageOperationHandler(string q)
         {
             setup = new Setup(q);
         }

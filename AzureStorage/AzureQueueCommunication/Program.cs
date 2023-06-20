@@ -18,7 +18,7 @@ public class Program
         {
             ModelForQueue model = new() { Id = 5, Name = "Souvik Sardar", Location = "India" };
             var dataToSend = JsonSerializer.Serialize(model);
-            QueueMessageOperation ss = new QueueMessageOperation(queueName);
+            QueueMessageOperationHandler ss = new QueueMessageOperationHandler(queueName);
             var sendResponse = await ss.SendAsync(dataToSend);
             var statusCode = sendResponse.GetRawResponse().Status;
 
@@ -41,7 +41,7 @@ public class Program
     {
         try
         {
-            QueueMessageOperation ss = new QueueMessageOperation(queueName);
+            QueueMessageOperationHandler ss = new QueueMessageOperationHandler(queueName);
             var rcvResponse = await ss.ReceiveAsync<Dictionary<string, string>>();
             if (rcvResponse.Item2 == 200)
             {
@@ -65,7 +65,7 @@ public class Program
     {
         try
         {
-            QueueMessageOperation ss = new QueueMessageOperation(queueName);
+            QueueMessageOperationHandler ss = new QueueMessageOperationHandler(queueName);
             var rcvResponse = await ss.ReceiveAndDeleteAsync<Dictionary<string, string>>();
             if (rcvResponse.Item2 == 200)
             {
@@ -89,7 +89,7 @@ public class Program
     {
         try
         {
-            QueueMessageOperation ss = new QueueMessageOperation(queueName);
+            QueueMessageOperationHandler ss = new QueueMessageOperationHandler(queueName);
             var deleteData = await ss.DeleteQueueAsync();
             if (deleteData)
             {
