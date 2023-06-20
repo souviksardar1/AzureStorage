@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureBlobCommunication", "AzureBlobCommunication\AzureBlobCommunication.csproj", "{35B10526-6DB3-454B-A289-4C353866430C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureBlobCommunication", "AzureBlobCommunication\AzureBlobCommunication.csproj", "{35B10526-6DB3-454B-A289-4C353866430C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blob.SDK", "Blob.SDK\Blob.SDK.csproj", "{58512256-FF5A-4F8B-B23C-E0D89D51FA83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blob.SDK", "Blob.SDK\Blob.SDK.csproj", "{58512256-FF5A-4F8B-B23C-E0D89D51FA83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue.SDK", "Queue.SDK\Queue.SDK.csproj", "{27D1B06A-FA57-4F44-B270-69A69C22C761}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Queue.SDK", "Queue.SDK\Queue.SDK.csproj", "{27D1B06A-FA57-4F44-B270-69A69C22C761}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureQueueCommunication", "AzureQueueCommunication\AzureQueueCommunication.csproj", "{C551BFA8-E4F4-43EE-812E-2D9F83FB6FF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureQueueCommunication", "AzureQueueCommunication\AzureQueueCommunication.csproj", "{C551BFA8-E4F4-43EE-812E-2D9F83FB6FF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureStorageTableCommunication", "AzureStorageTableCommunication\AzureStorageTableCommunication.csproj", "{BECFBE55-060F-4A2D-B217-647A87C095FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureStorageTable.SDK", "AzureStorageTable.SDK\AzureStorageTable.SDK.csproj", "{C01D1843-CADC-4AEB-9138-FB0EFB144C07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{C551BFA8-E4F4-43EE-812E-2D9F83FB6FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C551BFA8-E4F4-43EE-812E-2D9F83FB6FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C551BFA8-E4F4-43EE-812E-2D9F83FB6FF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BECFBE55-060F-4A2D-B217-647A87C095FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BECFBE55-060F-4A2D-B217-647A87C095FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BECFBE55-060F-4A2D-B217-647A87C095FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BECFBE55-060F-4A2D-B217-647A87C095FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C01D1843-CADC-4AEB-9138-FB0EFB144C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C01D1843-CADC-4AEB-9138-FB0EFB144C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C01D1843-CADC-4AEB-9138-FB0EFB144C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C01D1843-CADC-4AEB-9138-FB0EFB144C07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
